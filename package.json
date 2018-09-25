@@ -1,0 +1,36 @@
+{
+  "name": "sk-cz-payment-codes",
+  "version": "1.0.0",
+  "description": "Generator of reference message with symbols (VS, SS, KS) used in bank transfers in Slovakia and Czech Republic.",
+  "main": "index.js",
+  "scripts": {
+    "build-bookmarklets": "node ./bookmarklet.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/durasj/sk-cz-payment-codes.git"
+  },
+  "keywords": [
+    "sepa",
+    "cz",
+    "sk",
+    "variable",
+    "specific",
+    "constant",
+    "code",
+    "symbol",
+    "bank",
+    "credit",
+    "transfer"
+  ],
+  "author": "Jakub Duras <jakub@duras.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/durasj/sk-cz-payment-codes/issues"
+  },
+  "homepage": "https://github.com/durasj/sk-cz-payment-codes#readme",
+  "devDependencies": {
+    "jest": "^23.6.0"
+  }
+}
