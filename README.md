@@ -10,9 +10,9 @@ Do you see any mistakes or did you have any problems using the generated text? L
 
 You can create a bookmark with URL that will contain code that will be executed each time you open the bookmark. The bookmarklet provided by me prompts for all 3 symbols, validates them, and fills them in the currently focused text field.
 
-- Code for the format used in **Slovakia**: [sk.js](https://github.com/durasj/sk-cz-payment-codes/blob/master/bookmarklets/sk.js)
+- Code for the format used in **Slovakia**: [sk.js](https://raw.githubusercontent.com/durasj/sk-cz-payment-codes/master/bookmarklets/sk.js)
 
-- Code for the format used in **Czechia**: [cz.js](https://github.com/durasj/sk-cz-payment-codes/blob/master/bookmarklets/cz.js)
+- Code for the format used in **Czechia**: [cz.js](https://raw.githubusercontent.com/durasj/sk-cz-payment-codes/master/bookmarklets/cz.js)
 
 ## Generator
 
