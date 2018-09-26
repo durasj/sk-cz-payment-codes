@@ -4,7 +4,7 @@ When sending payments to the Slovak or Czech Republic, you may be asked to fill 
 
 To make it easier to create the reference message and prevent some common mistakes, you can use my bookmarklet or online generator. You can also check out the [Background](#background) for more information.
 
-Do you see any mistakes or did you have any problems using the generated text? Let me know by opening an [Issue](https://github.com/durasj/sk-cz-banking-symbols-generator/issues) or [sending me an email](mailto:jakub@duras.me).
+Do you see any mistakes or did you have any problems using the generated text? Let me know by opening an [Issue](https://github.com/durasj/sk-cz-banking-symbols-generator/issues) or [send me an email](mailto:jakub@duras.me).
 
 ## Bookmarklet
 
@@ -14,9 +14,26 @@ You can create a bookmark with URL that will contain code that will be executed 
 
 - Code for the format used in **Czechia**: [cz.js](https://raw.githubusercontent.com/durasj/sk-cz-payment-codes/master/bookmarklets/cz.js)
 
-## Generator
+## Web Generator
 
 If you are not comfortable using the bookmarklet or need to generate the reference message only once, you can use my online generator available at [symbols.duras.me](https://symbols.duras.me).
+
+## NPM Module
+
+The generator part can be used as NPM module (`npm install sk-cz-payment-codes`):
+
+```javascript
+const { generate } = require('sk-cz-payment-codes');
+
+// Expected to return '/VS1234567890/SS1234567890/KS1234'
+generate('1234567890', '1234567890', '1234');
+
+// Expected to return '/VS/1234567890/SS/1234567890/KS/1234'
+generate('1234567890', '1234567890', '1234', 'CZ');
+
+// Expected to throw Error 'Wrong "vs" format - should be up to 10 numbers.'
+generate('12345678900');
+```
 
 ## Background
 
